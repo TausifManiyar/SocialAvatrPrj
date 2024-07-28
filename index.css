@@ -1,0 +1,220 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--Off-Black);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero {
+    background-color: var(--Dark-Grey);
+    width:385px;
+    height: 610px;
+    padding: 20px 55px;
+    margin-top: 75%;
+    margin-bottom: 67.5%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#page-sec {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    top: 330px;
+    gap: 10px;
+}
+
+p:last-child {
+    margin: 17px;
+    color: var(--White);
+    font-family: "Inter";
+    font-size: 14px;
+}
+
+p {
+    font-family: "Inter";
+    font-size: 14px;
+    color: var(--Green);
+    font-weight: 500;
+}
+
+h1 {
+    font-family: "Inter";
+    color: var(--White);
+}
+
+img {
+    border-radius: 100%;
+    width: 90px;
+    position: absolute;
+    top: 214px;
+}
+
+#but-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 450px;
+}
+
+button {
+    border: none;
+    background-color: var(--Grey);
+    color: var(--White);
+    width: 304px;
+    height: 45px;
+    margin-top: 2.2%;
+    margin-bottom: 3.2%;
+    border-radius: 8px;
+    bottom: 100px;
+    font-family: "Inter";
+    font-size: 14.9px;
+    font-weight: 600;
+}
+
+button:hover {
+    cursor: pointer;
+    color: var(--Off-Black);
+    background-color: var(--Green);
+}
+
+button:nth-child(2) {
+    margin-top: 2.02%;
+}
+
+button:nth-last-child(2) {
+    margin-top: 2.1%;
+}
+
+button:last-child {
+    margin-top: 1.9%;
+    margin-bottom: 2.5%;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    color: var(--White);
+    position: absolute;
+    top: 100%;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+} 
+
+@media (width < 400px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #hero {
+        background-color: var(--Dark-Grey);
+        width:327px;
+        height: 579px;
+        margin-right: 1px;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #but-sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 375px;
+    }
+
+    #page-sec {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        top: 256px;
+        gap: 10px;
+        left: 43px;
+    }
+
+    button {
+        border: none;
+        background-color: var(--Grey);
+        color: var(--White);
+        width: 280px;
+        height: 45px;
+        font-family: "Inter";
+        font-size: 14.9px;
+        font-weight: 600;
+    }
+
+    button:nth-child(2) {
+        margin-top: 2.7%
+    }
+    
+    button:nth-last-child(2) {
+        margin-top: 2.8%;
+    }
+
+    button:nth-last-child(3) {
+        margin-top: 2.5%;
+    }
+    
+    button:last-child {
+        margin-top: 2.5%;
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: var(--Off-Black);
+        background-color: var(--Green);
+    }
+
+    img {
+        border-radius: 100%;
+        width: 90px;
+        position: absolute;
+        top: 139px;
+        left: 142px;
+    }
+
+    .attribution { 
+        margin-top: 240px;
+        font-size: 11px;
+        text-align: center;
+        color: var(--White);
+    }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+    }
+}
